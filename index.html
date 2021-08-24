@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml" lang="">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/bk/bootstrap.min.css">
+		<link href="css/bk/bk.css" rel="stylesheet">
+		<link href="css/bk/iconfont.css" rel="stylesheet">
+		<link href="css/bk/sidebar.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/bk/common.css">
+		<link rel="stylesheet" href="css/layui/css/layui.css">
+		<script src="js/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="css/layui/layui.js"></script>
+		<script src="js/index.js"></script>
+
+		<style type="text/css">
+			html,
+			body {
+				height: 100%;
+			}
+
+			.bk-nav-user {
+				color: #bfcbda !important;
+			}
+
+			.layui-nav-bar {
+				display: none !important;
+			}
+
+			a:hover {
+				text-decoration: none !important;
+			}
+
+			dd {
+				padding: 0 3px 0 3px;
+				line-height: 25px;
+			}
+
+			dd a:hover {
+				background: #e4effe !important;
+				color: #4693fe !important;
+			}
+
+			.layui-nav {
+				background: #313b4c !important;
+				right: -15px;
+			}
+
+			.layui-tab {
+				margin: 0 !important;
+			}
+
+			.layui-tab-brief>.layui-tab-more li.layui-this:after,
+			.layui-tab-brief>.layui-tab-title .layui-this:after {
+				display: none !important;
+			}
+
+			.layui-tab-title {
+				border: none !important;
+			}
+
+			.layui-tab-title li:first-child {
+				margin-left: 20px !important;
+			}
+		</style>
+
+		<script>
+			layui.use('element', function() {
+				let element = layui.element;
+			})
+		</script>
+
+	</head>
+	<body>
+		<!-- 头部 -->
+		<nav class="bk-horz-nav bk-horz-nav-min">
+			<div class="bk-nav-logo fl">
+				<img src="img/img.png" alt="加载失败">
+			</div>
+			<div class="bk-nav-user fr" style="padding:0 10px 0 10px;">
+				<ul class="layui-nav">
+					<li class="layui-nav-item">
+						<a href="javascript:" style="color: #fff">王君伟</a>
+						<dl class=" layui-nav-child" style="left: 5px;min-width: 105%;">
+							<dd class="menu" style="text-align: left">
+								<a style="padding:0;font-size:12px" onclick="logout()">
+									<i class="layui-icon layui-icon-logout" style="color:red;margin-right:3px;"></i>
+									注销
+								</a>
+							</dd>
+							<dd class="menu" style="text-align: left;">
+								<a style="padding:0;font-size:12px">
+									<i class="layui-icon layui-icon-username"
+										style="color:#1E9FFF;margin-right:3px;"></i>
+									修改资料
+								</a>
+							</dd>
+						</dl>
+					</li>
+				</ul>
+				<img src="img/img_1.png" style="position:relative;top:-48px;float:left;right:-10px" alt="加载失败"/>
+
+			</div>
+		</nav>
+		<!-- 下部 -->
+		<div class="bk-layout bk-layout-has-sidebar" style="height:calc(100% - 60px);">
+			<!-- 左侧导航栏 -->
+			<div class="bk-sidebar slide-close">
+				<div class="slide-switch">
+					<i class="icon bk-icon icon-dedent f14"></i>
+				</div>
+				<div class="nav-list">
+					<ul>
+						<li class="menu-li">
+							<a href="javascript:">
+								<span class="icon-box">
+									<i class="bk-icon icon-home"></i>
+								</span>
+								<span class="nav-name">一级菜单</span>
+							</a>
+							<div class="flex-subnavs">
+								<a href="javascript:" target="">
+									<i></i>
+									二级菜单
+								</a>
+							</div>
+						</li>
+						<li class="menu-li">
+							<a href="javascript:">
+								<span class="icon-box">
+									<i class="bk-icon icon-panel"></i>
+								</span>
+								<span class="nav-name">一级菜单</span>
+							</a>
+							<div class="flex-subnavs">
+								<a href="javascript:" target="">
+									<i></i>
+									二级菜单
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="copyright">
+					<p>Copyright &copy; 2012-2017 蓝鲸智云.</p>
+					<span>All Rights Reserved.</span>
+				</div>
+			</div>
+
+			<!-- 中间主页面 -->
+			<div class="page-content" style="">
+				<div class="layui-tab layui-tab-brief" lay-filter="demo" lay-allowClose="true"
+					style="height:100%;">
+					<ul class="layui-tab-title" style="height:auto;">
+						<li class="layui-this">网站设置</li>
+						<li>用户管理</li>
+						<li>权限分配</li>
+						<li>商品管理</li>
+						<li>订单管理</li>
+						<li>订单管理</li>
+						<li>订单管理</li>
+						<li>订单管理</li>
+						<li>订单管理</li>
+						<li>订单管理</li>
+						<li>订单管理</li>
+						<li>订单管理</li>
+						<li>订单管理</li>
+						<li>订单管理</li>
+						<li>订单管理</li>
+						<li>订单管理</li>
+						<li>订单管理</li>
+						<li>订单管理</li>
+						<li>订单管理</li>
+						<li>订单管理</li>
+						<li>订单管理</li>
+					</ul>
+					<div class="layui-tab-content" style="height:calc(100% - 40px);overflow:hidden;">
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>
+<script src="css/bk/nav.js"></script>
